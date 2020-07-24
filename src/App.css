@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
 }
+.calculator {
+  background-color: #111;
+  width: 250px;
+  height: 380px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
+  box-shadow: 2px 2px 5px rgba(0, 0,0, 0.5)
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.display {
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  font-size: 36px;
+  position: relative;
+}
+.display small {
+  color: #EE9406;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  font-size: 12px;
+}
+button.orange{
+  background-color: #EE9406;
+  color: #fff;
+}
+button.dark-grey{
+  background-color: #323232;
+  color: #fff;
+}
+button.light-grey{
+  background-color: #A5A5A5;
+}
+button.big-v{
+  border-radius: 50px;
+  height: 110px;
+}
+button.big-h{
+  border-radius: 50px;
+  width: 110px;
+}
+.nums-container {
+  width: 75%;
+}
+.ops-container {
+  width: 25%;
+}
+button.ac{
+  margin-right: 50%;
+}
+button:active {
+  transform: scale(0.9);
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  opacity: 0.9;
 }
